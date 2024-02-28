@@ -7,6 +7,14 @@ class MyCardSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(children: [MyCardSectionHeader(),SizedBox(height: 20,),MyCard()],);
+    return const Column(
+      children: [
+        MyCardSectionHeader(),
+        SizedBox(
+          height: 20,
+        ),
+        MyCard()
+      ],
+    );
   }
 }
