@@ -7,15 +7,23 @@ class AllExpensesview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(padding: const EdgeInsets.only(left:20,top: 20,bottom: 20,right: 8),
+    return Container(
+      padding: const EdgeInsets.only(left: 20, top: 20, bottom: 20, right: 8),
+      decoration: ShapeDecoration(
         color: Colors.white,
-        child: const Column(
-          children: [
-            AllExpensesHeader(),
-            SizedBox(
-              height: 16,
-            ),
-          AllExpensesItemList()],
-        ));
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+      ),
+      child: const Column(
+        children: [
+          AllExpensesHeader(),
+          SizedBox(
+            height: 16,
+          ),
+          AllExpensesItemList()
+        ],
+      ),
+    );
   }
 }
