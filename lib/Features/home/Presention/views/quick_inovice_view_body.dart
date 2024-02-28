@@ -22,10 +22,10 @@ class QuickInvoiceViewBody extends StatelessWidget {
           children: [
             QuickInvoiceViewHeader(),
             UserInfoListTileList(),
-            // Divider(
-            //   height: 48,
-            //   color: Color(0xffF1F1F1),
-            // ),
+            Divider(
+              height: 48,
+              color: Color(0xffF1F1F1),
+            ),
             Expanded(
               child: Row(
                 children: [
