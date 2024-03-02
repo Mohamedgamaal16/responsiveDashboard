@@ -7,6 +7,14 @@ class ExpensesAndInvoiceViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(children: [AllExpensesview(),SizedBox(height:24 ,),Expanded(child: QuickInvoiceView())],);
+    return const Column(
+      children: [
+        Expanded(child: AllExpensesview()),
+        SizedBox(
+          height: 24,
+        ),
+        Expanded(child: QuickInvoiceView())
+      ],
+    );
   }
 }

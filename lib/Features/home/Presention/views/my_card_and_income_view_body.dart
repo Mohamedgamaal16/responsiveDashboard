@@ -17,16 +17,17 @@ class MyCardAndIncomeViewBody extends StatelessWidget {
           ),
         ),
         child: const CardAndTransactionSection(),
-      ),
+      ),const SizedBox(height: 24,),
       Container(
-          padding: const EdgeInsets.all(24),
+          padding: const EdgeInsets.all(20),
           decoration: ShapeDecoration(
             color: Colors.white,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          child: const  IncomeSection()),
+          child: const Expanded(child: IncomeSection()),
+      )
     ]);
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/Features/home/Presention/views/income_header.dart';
+import 'package:responsive_dashboard/Features/home/Presention/views/income_section_item_list.dart';
 import 'package:responsive_dashboard/Features/home/Presention/views/income_section_piechart.dart';
 
 class IncomeSection extends StatelessWidget {
@@ -11,7 +12,10 @@ class IncomeSection extends StatelessWidget {
       children: [
         IncomeHeader(),
         Row(
-          children: [Expanded(child: SizedBox(height: 200,width: 200,child: IncomeSectionPieChart()))],
+          children: [
+            Expanded(child: IncomeSectionPieChart()),
+            Expanded(child: IncomeSectionItemList())
+          ],
         )
       ],
     );
