@@ -5,7 +5,6 @@ void main() {
   runApp(const ResponsiveDashboard());
 }
 
-
 class ResponsiveDashboard extends StatelessWidget {
   const ResponsiveDashboard({super.key});
 
@@ -13,7 +12,7 @@ class ResponsiveDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-     
+      debugShowCheckedModeBanner: false,
       home: ResponsiveDashBoardBody(),
     );
   }

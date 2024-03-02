@@ -6,6 +6,6 @@ class QuickInvoiceView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Expanded(child: QuickInvoiceViewBody());
+    return const QuickInvoiceViewBody();
   }
 }

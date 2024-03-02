@@ -9,11 +9,11 @@ class ExpensesAndInvoiceViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        Expanded(child: AllExpensesview()),
+        AllExpensesview(),
         SizedBox(
           height: 24,
         ),
-        Expanded(child: QuickInvoiceView())
+        QuickInvoiceView()
       ],
     );
   }

@@ -6,6 +6,6 @@ class MyCardAndIncomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Expanded(child: MyCardAndIncomeViewBody());
+    return const MyCardAndIncomeViewBody();
   }
 }

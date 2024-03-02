@@ -26,7 +26,7 @@ class MyCardAndIncomeViewBody extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          child: const Expanded(child: IncomeSection()),
+          child: const IncomeSection(),
       )
     ]);
   }

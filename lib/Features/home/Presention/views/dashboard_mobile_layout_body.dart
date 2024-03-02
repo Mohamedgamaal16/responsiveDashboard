@@ -7,20 +7,13 @@ class DashBoardMobileLayoutbody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomScrollView(
-      slivers: [
-        SliverFillRemaining(
-            child: Expanded(
-              child: Column(
-                        children: [
-              Expanded(child: ExpensesAndInvoiceView()),
-              Expanded(
-                child: MyCardAndIncomeView(),
-              )
-                        ],
-                      ),
-            ))
-      ],
+    return const SingleChildScrollView(
+      child: Column(
+        children: [
+          ExpensesAndInvoiceView(),
+          MyCardAndIncomeView(),
+        ],
+      ),
     );
   }
 }

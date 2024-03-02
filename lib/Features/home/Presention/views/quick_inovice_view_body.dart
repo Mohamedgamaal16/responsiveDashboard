@@ -26,47 +26,43 @@ class QuickInvoiceViewBody extends StatelessWidget {
             height: 48,
             color: Color(0xffF1F1F1),
           ),
-          Expanded(
-            child: Row(
-              children: [
-                Expanded(
-                  child: CustomgridItem(
-                    title: 'Customer name',
-                    hint: 'Type customer name',
-                  ),
+          Row(
+            children: [
+              Expanded(
+                child: CustomgridItem(
+                  title: 'Customer name',
+                  hint: 'Type customer name',
                 ),
-                SizedBox(
-                  width: 16,
+              ),
+              SizedBox(
+                width: 16,
+              ),
+              Expanded(
+                child: CustomgridItem(
+                  title: 'Item name',
+                  hint: 'Type customer name',
                 ),
-                Expanded(
-                  child: CustomgridItem(
-                    title: 'Item name',
-                    hint: 'Type customer name',
-                  ),
-                )
-              ],
-            ),
+              )
+            ],
           ),
-          Expanded(
-            child: Row(
-              children: [
-                Expanded(
-                  child: CustomgridItem(
-                    title: 'Customer Email',
-                    hint: 'Type customer Email',
-                  ),
+          Row(
+            children: [
+              Expanded(
+                child: CustomgridItem(
+                  title: 'Customer Email',
+                  hint: 'Type customer Email',
                 ),
-                SizedBox(
-                  width: 16,
+              ),
+              SizedBox(
+                width: 16,
+              ),
+              Expanded(
+                child: CustomgridItem(
+                  title: 'Item Mount',
+                  hint: 'Mount in USD',
                 ),
-                Expanded(
-                  child: CustomgridItem(
-                    title: 'Item Mount',
-                    hint: 'Mount in USD',
-                  ),
-                )
-              ],
-            ),
+              )
+            ],
           ),
           Row(
             children: [
