@@ -8,7 +8,7 @@ class IncomeSectionItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      contentPadding: EdgeInsets.only(left: 40),
+      contentPadding: const EdgeInsets.only(left: 40),
       leading: Container(
         height: 12,
         width: 12,
@@ -19,10 +19,24 @@ class IncomeSectionItem extends StatelessWidget {
         incomeSectionItemModel.title,
         style: AppStyles.styleMedium16(context),
       ),
-      trailing: Text(
+      trailing: adaptiveTrailingText(context),
+    );
+  }
+
+  Widget? adaptiveTrailingText(BuildContext context) {
+    if (MediaQuery.of(context).size.width > 400 &&
+        MediaQuery.of(context).size.width < 500) {
+        return null;
+    } else if (MediaQuery.of(context).size.width > 1199 &&
+        MediaQuery.of(context).size.width < 1375) {
+    
+
+      return Text(
         incomeSectionItemModel.ratio,
         style: AppStyles.styleMedium16(context),
-      ),
-    );
+      );
+    } else {
+      return null;
+    }
   }
 }

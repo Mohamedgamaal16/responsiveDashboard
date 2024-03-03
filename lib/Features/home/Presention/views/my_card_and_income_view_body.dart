@@ -1,9 +1,11 @@
+
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/Features/home/Presention/views/card_and_transaction_section.dart';
 import 'package:responsive_dashboard/Features/home/Presention/views/income_section.dart';
 
 class MyCardAndIncomeViewBody extends StatelessWidget {
   const MyCardAndIncomeViewBody({super.key});
+
 
   @override
   Widget build(BuildContext context) {

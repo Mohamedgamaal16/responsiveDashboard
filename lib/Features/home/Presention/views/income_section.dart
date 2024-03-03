@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/Features/home/Presention/views/income_header.dart';
 import 'package:responsive_dashboard/Features/home/Presention/views/income_section_item_list.dart';
@@ -8,16 +10,29 @@ class IncomeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
-        IncomeHeader(),
+        const IncomeHeader(),
         Row(
           children: [
-            Expanded(child: IncomeSectionPieChart()),
-            Expanded(child: IncomeSectionItemList())
+            const Expanded(child: IncomeSectionPieChart()),
+            adaptiveIncomeSectionItemList(context),
           ],
         )
       ],
     );
   }
 }
+
+Widget adaptiveIncomeSectionItemList(BuildContext context) {
+  if (MediaQuery.of(context).size.width > 1199 &&
+      MediaQuery.of(context).size.width < 1375) {
+    return const Text('');
+  } else {
+    return const Expanded(child: IncomeSectionItemList());
+  }
+}
+
+
+
+

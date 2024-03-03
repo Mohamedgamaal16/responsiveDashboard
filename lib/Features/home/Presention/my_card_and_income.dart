@@ -6,6 +6,8 @@ class MyCardAndIncomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MyCardAndIncomeViewBody();
+    return MediaQuery.of(context).size.width < 1199
+        ? const MyCardAndIncomeViewBody()
+        :const SingleChildScrollView(child: MyCardAndIncomeViewBody()) ;
   }
 }

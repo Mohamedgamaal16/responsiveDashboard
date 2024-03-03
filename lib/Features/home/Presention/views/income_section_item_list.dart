@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/Features/home/Data/income_section_item_model.dart';
 import 'package:responsive_dashboard/Features/home/Presention/views/income_section_item.dart';
@@ -16,6 +18,7 @@ class IncomeSectionItemList extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
+   log(MediaQuery.of(context).size.width.toString());
     return ListView.builder(
       shrinkWrap: true,
       itemCount: items.length,

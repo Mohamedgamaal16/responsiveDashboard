@@ -22,7 +22,7 @@ class _ResponsiveDashBoardBodyState extends State<ResponsiveDashBoardBody> {
       key: scaffoldKey,
       appBar: MediaQuery.of(context).size.width < 600
           ? AppBar(
-              backgroundColor: const Color(0xFFF1F1F1),
+              backgroundColor: Colors.white,
               leading: IconButton(
                   onPressed: () {
                     scaffoldKey.currentState!.openDrawer();

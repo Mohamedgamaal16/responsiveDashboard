@@ -6,6 +6,8 @@ class ExpensesAndInvoiceView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ExpensesAndInvoiceViewBody();
+    return MediaQuery.of(context).size.width < 1199
+        ? const ExpensesAndInvoiceViewBody()
+        :const SingleChildScrollView(child: ExpensesAndInvoiceViewBody())  ;
   }
 }
