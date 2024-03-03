@@ -26,11 +26,15 @@ class IncomeSectionItem extends StatelessWidget {
   Widget? adaptiveTrailingText(BuildContext context) {
     if (MediaQuery.of(context).size.width > 400 &&
         MediaQuery.of(context).size.width < 500) {
-        return null;
+      return null;
+    } else if (MediaQuery.of(context).size.width > 783 &&
+        MediaQuery.of(context).size.width < 1200) {
+      return Text(
+        incomeSectionItemModel.ratio,
+        style: AppStyles.styleMedium16(context),
+      );
     } else if (MediaQuery.of(context).size.width > 1199 &&
         MediaQuery.of(context).size.width < 1375) {
-    
-
       return Text(
         incomeSectionItemModel.ratio,
         style: AppStyles.styleMedium16(context),
